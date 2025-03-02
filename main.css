@@ -1,0 +1,76 @@
+* {
+   box-sizing: border-box; 
+}body {
+    padding: 0px;
+    margin: 0px;
+    background: whitesmoke;
+    font-family: 'lora  , serif';
+}
+header{
+    background: lightpink;
+    height: 66px;
+}
+header .logo{
+float: left;
+height: inherit;
+margin-left: 2cm;
+}
+header .logo-text {
+    margin: 9px;
+}
+header .logo-text span {
+    color: rgb(204, 72, 94);
+    font: serif;
+
+}
+header * {
+    color: black;
+}
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border:1px red;
+}
+header ul li {
+    float: left;
+    position: relative;
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li {
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+    background: whitesmoke;
+    color: grey;
+
+}
+header ul li ul li a.logout {
+    color:red ;
+}
+header ul li a{
+    display: block;
+    padding: 22px;
+    text-decoration: none;
+    
+}
+header ul li a :hover{
+    background:lightcoral ;
+    transition: 0.5s;
+
+}
+header .menu-toggle {
+  display: none;  
+}
